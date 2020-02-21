@@ -1,0 +1,188 @@
+*{
+	margin: 0px;
+}
+@font-face {
+	font-family: 'Poke';
+	src: url('Poke.ttf');
+}
+@keyframes colors{
+	from{
+		background: linear-gradient(180deg, #DB162F 30%, #FFFFFF 73%);
+	}
+	to{
+		background: linear-gradient(180deg, #FFB6C1 30%, #572364);
+	}
+}
+#Titulo{
+	font: bold 36px Poke;
+}
+#menu{
+	background: white;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	background: linear-gradient(180deg, #000000 30%, #FFFFFF 73%);
+}
+#menu li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px 39px;
+	font: bold 16px verdana, sans-serif;
+	color: black;
+}
+body{
+	text-align: center;
+	background-color: #181F1C;
+}
+h1{
+	font: bold 20px verdana. sans-serif;
+}
+header, section, footer, nav, aside, article, figure, figcaption, hgroup{
+	display: block;
+}
+#agrupar{
+	width: 1000px;
+	margin: 15px auto;
+	text-align: left;
+}
+#cabecera{
+display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+	border-radius: 20px;
+	box-shadow: rgb(150,150,150) 3px 6px 10px;
+	animation-name: colors;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.lista > li:nth-child(odd){
+	border: solid 1px red;
+	margin: 2px;
+	background-color: white;
+	color: red;
+	transform: translate(0px);
+	transition: transform 0.3s ease-in-out 0.01s;
+}
+.lista > li:nth-child(even){
+	border: solid 1px black;
+	margin: 2px;
+	background-color: red;
+	color: #FFFFFF;
+	transform: translate(0px);
+	transition: transform 0.3s ease-in-out 0.01s;
+}
+.lista > li:nth-child(odd):hover{
+	transform: rotate(6deg);
+}
+.lista > li:nth-child(even):hover{
+	transform: rotate(-6deg);
+}
+#seccion{
+	float: left;
+	width: 700px;
+	margin: 20px;
+}
+#columna{
+	float: left;
+	width: 220px;
+	height: auto;
+	margin: 20px 0px;
+	padding: 20px;
+	background: #CCCCCC;
+}
+#pie{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid #999999;
+	color: white;
+	font: bold 12px verdana, sans-serif;
+}
+article {
+	background: #FFFBCC;
+	border: 1px solid #999999;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+article footer{
+	text-align: center;
+}
+figcaption{
+	font: italic 13px verdana, sans-serif;
+	padding: 2px;
+}
+#cf{
+	position: relative;
+	height: 180px;
+	width: 200px;
+}
+#cf img{
+	position: absolute;
+	left:0;
+	transition: opacity 1s ease-in-out;
+	margin-left: 240px;
+	padding-bottom: 0px;
+}
+#cf figcaption{
+	margin-left: 400px;
+}
+#cf img.top:hover{
+	opacity:0;
+}
+#ct{
+	padding: 8px;
+}
+#ct img{
+	padding: 35px;
+}
+#labo img{
+	padding: 10px;
+}
+#list > li:nth-child(odd){
+	display: inline-block;
+	border: solid 2px darkred;
+	margin: 5px;
+	background-color: black;
+	color: white;
+	transform: translate(0px);
+	transition: transform 0.3s ease-in-out 0.01s;
+	list-style: disc;
+	font: bold 13px arial, sans-serif;
+}
+#list >li:nth-child(even){
+	display: inline-block;
+	border: solid 1px darkred;
+	margin: 5px;
+	background-color: white;
+	color: black;
+	transform: translate(0px);
+	transition: transform 0.3s ease-in-out 0.01s;
+	list-style: none;	
+	font: bold 13px arial, sans-serif;
+}
+#list2 >li:nth-child(odd){
+	display: inline-block;
+	border: solid 1px darkred;
+	margin: 5px;
+	background-color: white;
+	color: black;
+	transform: translate(0px);
+	transition: transform 0.3s ease-in-out 0.01s;
+	list-style: none;
+	font: bold 13px arial, sans-serif;
+}
+#list2 > li:nth-child(even){
+	display: inline-block;
+	border: solid 2px darkred;
+	margin: 5px;
+	background-color: black;
+	color: white;
+	transform: translate(0px);
+	transition: transform 0.3s ease-in-out 0.01s;
+	list-style: disc;
+	font: bold 13px arial, sans-serif;
+}
